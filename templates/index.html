@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../static/js/slider.js"></script>
+
+        <title>Inicio</title>
+    </head>
+
+    <body>
+        <h1>Attrition</h1>
+        
+        <form action="/result" method="POST">
+            <label for="intAge">Edad:</label>
+            <input type="number" min="18" max="70" id="intAge" name="Age">
+            <br>
+            <label for="intMonInc">Ganancias mensuales:</label>
+            <input type="number" id="intMonInc" name="MonthlyIncome">
+            <br>
+            <label for="intWorYea">Total de anios trabajando:</label>
+            <input type="number" id="intWorYea" name="TotalWorkingYears">
+            <br>
+            <label for="intYeaCom">Anios en la compania:</label>
+            <input type="number" id="intYeaCom" name="YearsAtCompany">
+            <br>
+            <label for="intYeaRol">Anios en puesto actual:</label>
+            <input type="number" id="intYeaRol" name="YearsInCurrentRole">
+            <br>
+            <label for="intYeaMan">Anios con manager actual:</label>
+            <input type="number" id="intYeaMan" name="YearsWithCurrManager">
+            <br>
+
+            <label for="intEnvSat">Satisfaccion ambiental:</label>
+            <input type="range" min="1" max="5" value="3" id="intEnvSat" name="EnvironmentSatisfaction">
+            <p>Valor: <span id="valEnvSat"></span></p>
+            <br>
+            <label for="intJobInv">Involucracion laboral:</label>
+            <input type="range" min="1" max="5" value="3" id="intJobInv" name="JobInvolvement">
+            <p>Valor: <span id="valJobInv"></span></p>
+            <br>
+            <label for="intJobLev">Nivel de trabajo:</label>
+            <input type="range" min="1" max="5" value="3" id="intJobLev" name="JobLevel">
+            <p>Valor: <span id="valJobLev"></span></p>
+            <br>
+            <label for="intStoLev">Nivel de acciones:</label>
+            <input type="range" min="0" max="3" value="1" id="intStoLev" name="StockOptionLevel">
+            <p>Valor: <span id="valStoLev"></span></p>
+            <br>
+            
+            <label for="cmbBusTra">Viajes de negocio:</label>
+            <select id="cmbBusTra" name="BusinessTravel">
+                <option value="0">Nada</option>
+                <option value="1">Rara vez</option>
+                <option value="2">Frecuentemente</option>
+            </select>
+            <br>
+            <label for="cmbJobRol">Viajes de negocio:</label>
+            <select id="cmbJobRol" name="JobRole">
+                <option value="0">Ejecutivo de ventas</option>
+                <option value="1">Investigador</option>
+                <option value="2">Tecnico laboratorista</option>
+                <option value="3">Director de manufactura</option>
+                <option value="4">Representante de salud</option>
+                <option value="5">Manager</option>
+                <option value="6">Representante de ventas</option>
+                <option value="7">Director de investigacion</option>
+                <option value="8">Recursos humanos</option>
+            </select>
+            <br>
+            <label for="cmbMarSta">Estado marital:</label>
+            <select id="cmbMarSta" name="MaritalStatus">
+                <option value="0">Soltero</option>
+                <option value="1">Casado</option>
+                <option value="2">Divorciado</option>
+            </select>
+            <br>         
+            <label for="bolOveTim">Sobretiempo:</label>
+            <input type="checkbox" id="bolOveTim" name="OverTime">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>

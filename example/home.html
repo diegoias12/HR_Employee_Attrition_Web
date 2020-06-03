@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inicio</title>
+    </head>
+
+    <body>
+        <h1>Hola mundo desde html</h1>
+        <h2> {{nombre}} </h2>
+
+        {% for item in my_list %}
+            {% if item > 5 %}
+                <p> {{ item }} </p>
+            {% endif %}
+        {% endfor %}
+
+    </body>
+</html>
